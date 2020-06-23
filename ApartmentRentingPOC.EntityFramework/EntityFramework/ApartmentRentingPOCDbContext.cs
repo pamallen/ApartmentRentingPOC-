@@ -1,14 +1,17 @@
 ﻿using System.Data.Common;
+using System.Data.Entity;
 using Abp.EntityFramework;
+using ApartmentRentingPOC.Apartments;
+using ApartmentRentingPOC.Clients;
+using ApartmentRentingPOC.Rooms;
 
 namespace ApartmentRentingPOC.EntityFramework
 {
     public class ApartmentRentingPOCDbContext : AbpDbContext
     {
-        //TODO: Define an IDbSet for each Entity...
-
-        //Example:
-        //public virtual IDbSet<User> Users { get; set; }
+       public virtual IDbSet<Apartment> Apartments { get; set; }
+       public virtual IDbSet<Room> Rooms { get; set; }
+       public virtual IDbSet<Client> Clients { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

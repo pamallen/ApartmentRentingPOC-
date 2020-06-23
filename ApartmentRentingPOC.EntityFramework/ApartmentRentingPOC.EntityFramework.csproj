@@ -219,6 +219,10 @@
   <ItemGroup>
     <Compile Include="EntityFramework\ApartmentRentingPOCDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\ApartmentRentingPOCRepositoryBase.cs" />
+    <Compile Include="Migrations\202006231049071_Initial.cs" />
+    <Compile Include="Migrations\202006231049071_Initial.designer.cs">
+      <DependentUpon>202006231049071_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ApartmentRentingPOCDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -232,6 +236,11 @@
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>ApartmentRentingPOC.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006231049071_Initial.resx">
+      <DependentUpon>202006231049071_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
