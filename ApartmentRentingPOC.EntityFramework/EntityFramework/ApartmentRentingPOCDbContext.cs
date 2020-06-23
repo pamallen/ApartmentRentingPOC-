@@ -46,5 +46,10 @@ namespace ApartmentRentingPOC.EntityFramework
         {
 
         }
+
+        public void Dispose()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
