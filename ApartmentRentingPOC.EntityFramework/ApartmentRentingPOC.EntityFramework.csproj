@@ -223,6 +223,14 @@
     <Compile Include="Migrations\202006231049071_Initial.designer.cs">
       <DependentUpon>202006231049071_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006231508066_Adding_Room_to_Client_object.cs" />
+    <Compile Include="Migrations\202006231508066_Adding_Room_to_Client_object.designer.cs">
+      <DependentUpon>202006231508066_Adding_Room_to_Client_object.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006231514577_Make_Room_Optional_In_Client_Object.cs" />
+    <Compile Include="Migrations\202006231514577_Make_Room_Optional_In_Client_Object.designer.cs">
+      <DependentUpon>202006231514577_Make_Room_Optional_In_Client_Object.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ApartmentRentingPOCDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -240,6 +248,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006231049071_Initial.resx">
       <DependentUpon>202006231049071_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006231508066_Adding_Room_to_Client_object.resx">
+      <DependentUpon>202006231508066_Adding_Room_to_Client_object.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006231514577_Make_Room_Optional_In_Client_Object.resx">
+      <DependentUpon>202006231514577_Make_Room_Optional_In_Client_Object.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

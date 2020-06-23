@@ -218,6 +218,10 @@
     <Compile Include="Apartments\ApartmentAppService.cs" />
     <Compile Include="Apartments\Dtos\EditApartmentInput.cs" />
     <Compile Include="Apartments\Dtos\CreateNewApartmentInput.cs" />
+    <Compile Include="Clients\ClientAppService.cs" />
+    <Compile Include="Clients\Dtos\CreateNewClientInput.cs" />
+    <Compile Include="Clients\Dtos\EditClientInput.cs" />
+    <Compile Include="Clients\IClientAppService.cs" />
     <Compile Include="Rooms\Dtos\EditRoomInput.cs" />
     <Compile Include="Rooms\RoomAppService.cs" />
     <Compile Include="Rooms\Dtos\CreateNewRoomInput.cs" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,9 +16,11 @@ namespace ApartmentRentingPOC.Clients
         public virtual string LastName { get; set; }
         public virtual string Email { get; set; }
         public virtual string Phone { get; set; }
-        public virtual DateTime BirthDate { get; set; }
+        public virtual DateTime? BirthDate { get; set; }
         public virtual string Nationality { get; set; }
         public virtual Room Room { get; set; }
+        [ForeignKey(nameof(Room))]
+        public virtual int? RoomId { get; set; }
 
         /// <summary>
         /// We do not make constructor public to force creating this entity using the <see cref="Create"/> method.

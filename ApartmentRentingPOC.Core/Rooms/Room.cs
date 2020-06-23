@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Entities;
 using ApartmentRentingPOC.Apartments;
+using ApartmentRentingPOC.Clients;
 
 namespace ApartmentRentingPOC.Rooms
 {
