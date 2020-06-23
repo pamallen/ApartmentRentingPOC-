@@ -1027,3 +1027,77 @@ The statement has been terminated.
    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+DEBUG 2020-06-23 16:16:46,405 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-06-23 16:16:46,422 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2020-06-23 16:16:46,429 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.Web.ApartmentRentingPOCWebModule, ApartmentRentingPOC.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,431 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,431 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,432 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,432 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,432 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCDataModule, ApartmentRentingPOC.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,432 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,432 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,432 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCCoreModule, ApartmentRentingPOC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,433 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCApplicationModule, ApartmentRentingPOC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,433 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCWebApiModule, ApartmentRentingPOC.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,433 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:46,437 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2020-06-23 16:16:47,226 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: ApartmentRentingPOC.EntityFramework.ApartmentRentingPOCDbContext, ApartmentRentingPOC.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 16:16:50,693 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2020-06-23 16:16:50,836 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-06-23 16:16:50,867 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-06-23 16:16:50,934 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ApartmentRentingPOC
+DEBUG 2020-06-23 16:16:51,865 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-06-23 16:16:51,945 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'ApartmentRentingPOC.Rooms.IRoomAppService' with service name 'app/room'.
+DEBUG 2020-06-23 16:16:51,947 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'ApartmentRentingPOC.Apartments.IApartmentAppService' with service name 'app/apartment'.
+WARN  2020-06-23 16:17:32,933 [5    ] nHandling.AbpApiExceptionFilterAttribute - This apartment doesn't exist
+Abp.UI.UserFriendlyException: This apartment doesn't exist
+   at ApartmentRentingPOC.Apartments.ApartmentAppService.<GetApartment>d__6.MoveNext() in C:\Users\pamallen\Downloads\ApartmentRentingPOC\5.5.0\src\ApartmentRentingPOC.Application\Apartments\ApartmentAppService.cs:line 109
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.<InternalInterceptAsynchronous>d__5`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Auditing.AuditingInterceptor.<InternalInterceptAsynchronous>d__6`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.<InternalInterceptAsynchronous>d__4`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
