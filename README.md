@@ -28,7 +28,7 @@ Elle suit la structure suivante :
  
 Chaque classe possède un service associé dans la couche Application (ex: RoomAppService).
 Ces services exposent des fonctions basiques permettant de créer/éditer/lire/supprimer les objets en questions.
-Le ClientAppService permet aussi de lier un Client à une Room (sous réserve que son profil et que la chambre est disponible).
+Le ClientAppService permet aussi de lier un Client à une Room (sous réserve que son profil soit complet et que la chambre est disponible).
 
 La base de données est gérée dans la couche EntityFramework en EDM.
 
