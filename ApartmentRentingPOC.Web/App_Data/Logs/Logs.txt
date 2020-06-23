@@ -1,0 +1,21 @@
+DEBUG 2020-06-23 11:47:39,098 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-06-23 11:47:39,127 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2020-06-23 11:47:39,133 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.Web.ApartmentRentingPOCWebModule, ApartmentRentingPOC.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCDataModule, ApartmentRentingPOC.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCCoreModule, ApartmentRentingPOC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCApplicationModule, ApartmentRentingPOC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ApartmentRentingPOC.ApartmentRentingPOCWebApiModule, ApartmentRentingPOC.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:39,158 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2020-06-23 11:47:40,029 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: ApartmentRentingPOC.EntityFramework.ApartmentRentingPOCDbContext, ApartmentRentingPOC.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-06-23 11:47:44,644 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2020-06-23 11:47:44,792 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-06-23 11:47:44,813 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-06-23 11:47:44,951 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ApartmentRentingPOC
+DEBUG 2020-06-23 11:47:45,501 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
